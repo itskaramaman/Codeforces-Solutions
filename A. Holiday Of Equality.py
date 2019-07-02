@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+maxWelfare=max(a)
+minBurles=list(map(lambda x: maxWelfare-x,a))
+print(sum(minBurles))
